@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact & Subscribe — Neurobard</title>
+<meta name="description" content="Get in touch with Neurobard or subscribe to our newsletter.">
+<meta property="og:title" content="Contact & Subscribe — Neurobard">
+<meta property="og:description" content="Get in touch with Neurobard or subscribe to our newsletter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://neurobard.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://neurobard.com">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="icon" href="../favicon.ico">
+<link rel="manifest" href="../manifest.json">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Neurobard","url":"https://neurobard.com","description":"The authoritative voice covering neuroscience, neurotechnology, AI and the brain."}</script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<canvas id="nb-canvas"></canvas>
+
+<div class="page-hero" data-hero-theme="contact" style="min-height:45vh;">
+  <div class="container"><div style="position:relative;z-index:2;">
+    <div class="page-hero-eyebrow">Connect</div>
+    <h1 class="page-hero" style="color:#fff;font-size:clamp(2rem,4vw,3rem);text-shadow:0 2px 12px rgba(0,0,0,.4)">Contact & Subscribe</h1>
+    <p style="color:rgba(226,232,240,.8);max-width:56ch;margin-top:.8rem;font-size:1rem;text-shadow:0 1px 6px rgba(0,0,0,.3)">Reach us for editorial inquiries, sponsorships, or to join our weekly newsletter.</p>
+  </div></div>
+</div>
+<section class="section-pad"><div class="container"><div class="article-body">
+<h2>Subscribe to The Neurobard Weekly</h2>
+<p>The most important neuroscience and neurotechnology news, curated analysis, and industry insights — delivered every Monday morning. Free forever. No spam.</p>
+<form class="newsletter-form" onsubmit="nlSubmit(event)" style="max-width:460px;margin:20px 0">
+  <input type="email" placeholder="your@email.com" required>
+  <button type="submit">Subscribe</button>
+</form>
+<div class="nl-success">Welcome aboard! Check your inbox.</div>
+<h2>Editorial & General Inquiries</h2>
+<p>Email: <a href="mailto:hello@neurobard.com">hello@neurobard.com</a></p>
+<h2>Advertising & Sponsorship</h2>
+<p>Interested in reaching our audience of neuroscience professionals, researchers, investors, and technology leaders? Contact us at <a href="mailto:ads@neurobard.com">ads@neurobard.com</a> for media kit and rates.</p>
+<h2>Contribute</h2>
+<p>Are you a neuroscientist, BCI engineer, neurosurgeon, or neurotechnology professional interested in contributing to Neurobard? We welcome expert guest contributors. Email <a href="mailto:contribute@neurobard.com">contribute@neurobard.com</a> with your background and proposed topic.</p>
+<h2>Parent Company</h2>
+<p>Neurobard is a media property of Isha Consulting LLC, a Maryland company.</p>
+</div></div></section>
+
+<footer id="nb-footer"></footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/news-feed.js"></script>
+<div id="cookie-consent">
+  <p>We use cookies to enhance your experience and analyze site traffic. <a href="../legal/cookie-policy.html">Cookie Policy</a></p>
+  <div class="cookie-btns">
+    <button class="btn-decline" onclick="dismissCookie(false)">Decline</button>
+    <button class="btn-accept" onclick="dismissCookie(true)">Accept All</button>
+  </div>
+</div>
+<div id="nb-search-overlay">
+  <button class="search-close" onclick="toggleSearch()">&times;</button>
+  <input id="nb-search-input" type="text" placeholder="Search neuroscience, BCI, AI..." oninput="doSearch(this.value)">
+  <div id="nb-search-results"></div>
+</div>
+</body></html>
